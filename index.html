@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Registro de Cliente</title>
+</head>
+<body class="center">
+    <main class="center container"> Formulario de registro
+        <form action="" class="register" class="center">
+            <div class="sub">
+                <span class="center form-element name">
+                    <label for="user-name">Nombre</label>
+                    <input name="user-name" id="user-name" type="text" placeholder="Ada">
+                </span>
+                <span class="center form-element last-name">
+                    <label for="user-lastname">Apellido</label>
+                    <input name="user-lastname" type="text" placeholder="Lovelace">
+                </span>
+            </div>
+            <div class="sub">
+                <section class="center form-element dni">
+                    <label for="user-dni">DNI</label>
+                    <input name="user-dni" id="user-dni" type="number" placeholder="99.999.999" min="1" max="99999999" pattern="">
+                </section>
+                <section class="center form-element email">
+                    <label for="user-email">Email</label>
+                    <input name="user-email" id="user-email" type="email" placeholder="adalovelace@gmail.com">
+                </section>
+            </div>
+            <div class="sub">
+                <section class="center form-element password">
+                    <label for="name">Contraseña</label>
+                    <input name="user-password" id="user-password" type="password" placeholder="abc123" minlength="8" maxlength="16">
+                </section>
+                <section class="center form-element password">
+                    <label for="name">Repetir Contraseña</label>
+                    <input name="user-password" id="user-password" type="password" placeholder="abc123" minlength="8" maxlength="16" >
+                </section>
+                <small>* La contraseña debe tener como mínimo 8 carácteres y como máximo 16</small>
+            </div>
+            <section class="center form-element terms-container">
+                <input name="terms" id="input-terms" type="checkbox" placeholder="Ada">
+                <label for="terms" class="terms">Aceptar términos y condiciones</label>
+                <input type="submit" value="Registrarse" id="register">
+            </section>
+        </form>
+    </main>
+</body>
+</html>
